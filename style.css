@@ -1,0 +1,278 @@
+:root {
+  --background-dark: #121212;
+  --background-section: #1e1e1e;
+  --background-card: #2a2a2a;
+  --text-color: #ffffff;
+  --accent-color: #0d6efd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background-dark);
+  color: var(--text-color);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(18, 18, 18, 0.8);
+  padding: 1rem 0;
+  z-index: 1000;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.navbar-toggler {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: block;
+}
+
+.navbar-toggler-icon {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  left: 0;
+}
+
+.navbar-toggler-icon::before {
+  top: -8px;
+}
+
+.navbar-toggler-icon::after {
+  top: 8px;
+}
+
+.navbar-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: rgba(18, 18, 18, 0.9);
+}
+
+.navbar-menu.active {
+  display: block;
+}
+
+.navbar-nav {
+  list-style: none;
+  padding: 1rem;
+  margin: 0;
+}
+
+.nav-item {
+  margin: 0.5rem 0;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.nav-link:hover {
+  color: var(--accent-color);
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: linear-gradient(to bottom right, var(--accent-color), var(--background-dark));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin: 1rem 0;
+}
+
+/* Botones */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--accent-color);
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0a58ca;
+}
+
+/* Secciones */
+.section {
+  padding: 5rem 0;
+  background-color: var(--background-section);
+}
+
+.section h2 {
+  color: var(--accent-color);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Contenedor para About y Contact */
+.section-container {
+  background-color: var(--background-card);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-container p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #adb5bd;
+  text-align: center;
+}
+
+/* Proyectos */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+  justify-items: center;
+}
+
+.project-card {
+  background-color: var(--background-card);
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+
+.project-card p {
+  color: #adb5bd;
+  margin-bottom: 1.5rem;
+}
+
+.project-card .btn {
+  margin: 0.25rem;
+}
+
+.project-card a.btn {
+  display: inline-block;
+}
+
+.project-card p + a.btn {
+  margin-top: 0.5rem;
+}
+
+/* Contacto */
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#contact h2, #contact p {
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: var(--background-dark);
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+footer p {
+  color: var(--text-color);
+}
+
+/* Media Queries para Responsividad */
+@media (min-width: 768px) {
+  .navbar-toggler {
+    display: none;
+  }
+
+  .navbar-menu {
+    display: block;
+    position: static;
+    background: none;
+  }
+
+  .navbar-nav {
+    display: flex;
+    padding: 0;
+    justify-content: flex-end;
+  }
+
+  .nav-item {
+    margin: 0 1rem;
+  }
+}
