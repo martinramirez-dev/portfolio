@@ -1,11 +1,12 @@
 import Link from 'next/link';
 import Navbar from '../components/Navbar';
+import Image from 'next/image';
 
 const projects = [
   {
     slug: 'cinemine',
     title: 'Cinemine',
-    img: 'https://martinramirez-dev.github.io/portfolio/images/cinemine.png',
+    img: '/images/cm.png',
     description: 'A movie discovery app using The Movie Database API. Includes search, featured section, movie detail modals, and a watchlist.',
     badges: ['HTML5', 'CSS3', 'JavaScript', 'API'],
     github: 'https://github.com/martinramirez-dev/cinemine',
@@ -14,7 +15,7 @@ const projects = [
   {
     slug: 'pokemon-search',
     title: 'Pokemon Search',
-    img: 'https://martinramirez-dev.github.io/portfolio/images/pokemon-search.png',
+    img: '/images/ps.png',
     description: 'A web app to search for Pokémon using the PokéAPI. Features a Game Boy–inspired design and localStorage-based favorites.',
     badges: ['HTML5', 'CSS3', 'JavaScript', 'API'],
     github: 'https://github.com/martinramirez-dev/pokemon-search',
@@ -23,7 +24,7 @@ const projects = [
   {
     slug: 'botaniq',
     title: 'Botaniq',
-    img: 'https://martinramirez-dev.github.io/portfolio/images/botaniq.png',
+    img: '/images/bt.png',
     description: 'A modern, responsive static page for a plant shop. Includes a menu, gallery, and contact section with a fresh green aesthetic.',
     badges: ['HTML5', 'CSS3', 'JavaScript'],
     github: 'https://github.com/martinramirez-dev/botaniq',
@@ -32,7 +33,7 @@ const projects = [
   {
     slug: 'coffee-lovers',
     title: 'Coffee Lovers',
-    img: 'https://martinramirez-dev.github.io/portfolio/images/coffee-lovers.png',
+    img: '/images/cl.png',
     description: 'A warm and elegant landing page for coffee lovers. Built with pure HTML and CSS, inspired by creamy coffee tones.',
     badges: ['HTML5', 'CSS3'],
     github: 'https://github.com/martinramirez-dev/coffee-lovers',
@@ -62,15 +63,15 @@ export default function Projects() {
                 className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl overflow-hidden hover:scale-105 hover:shadow-2xl transition-all duration-300 flex flex-col"
               >
 
-                <div className="relative w-full">
-                  <img
-                    src={project.img}
-                    alt={`${project.title} screenshot`}
-                    fill="true"
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                </div>
+              <div className="relative w-full h-64 overflow-hidden rounded-t-2xl">
+                <Image
+                  src={project.img}
+                  alt={`${project.title} screenshot`}
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
 
                 <div className="p-8 flex flex-col flex-1">
                   <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">

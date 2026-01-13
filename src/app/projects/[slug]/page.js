@@ -1,11 +1,12 @@
 import Navbar from "@/app/components/Navbar";
+import Image from "next/image";
 import Link from "next/link";
 
 const projectData = [
     {
       slug: 'cinemine',
       title: 'Cinemine',
-      img: 'https://martinramirez-dev.github.io/portfolio/images/cinemine.png',
+      img: '/images/cm.png',
       description: 'A movie discovery app using The Movie Database API. Includes search, featured section, movie detail modals, and a watchlist.',
       longDescription: '',
       tech: ['HTML5', 'CSS3', 'JavaScript', 'API'],
@@ -27,7 +28,7 @@ const projectData = [
     {
       slug: 'pokemon-search',
       title: 'Pokemon Search',
-      img: 'https://martinramirez-dev.github.io/portfolio/images/pokemon-search.png',
+      img: '/images/ps.png',
       description: 'A web app to search for Pokémon using the PokéAPI. Features a Game Boy–inspired design and localStorage-based favorites.',
       longDescription: '',
       tech: ['HTML5', 'CSS3', 'JavaScript', 'API'],
@@ -50,7 +51,7 @@ const projectData = [
     {
       slug: 'botaniq',
       title: 'Botaniq',
-      img: 'https://martinramirez-dev.github.io/portfolio/images/botaniq.png',
+      img: '/images/bt.png',
       description: 'A modern, responsive static page for a plant shop. Includes a menu, gallery, and contact section with a fresh green aesthetic.',
       longDescription: '',
       tech: ['HTML5', 'CSS3', 'JavaScript'],
@@ -73,7 +74,7 @@ const projectData = [
     {
       slug: 'coffee-lovers',
       title: 'Coffee Lovers',
-      img: 'https://martinramirez-dev.github.io/portfolio/images/coffee-lovers.png',
+      img: '/images/cl.png',
       description: 'A warm and elegant landing page for coffee lovers. Built with pure HTML and CSS, inspired by creamy coffee tones.',
       longDescription: '',
       tech: ['HTML5', 'CSS3'],
@@ -112,8 +113,14 @@ export default async function Details({ params }) {
               {project.title}
             </h1>
     
-            <div className="relative w-full mb-12 rounded-2xl overflow-hidden shadow-2xl">
-              <img src={project.img} alt={project.title} fill="true" className="object-cover" />
+            <div className="relative w-full h-96 md:h-screen max-h-screen mb-12 rounded-2xl overflow-hidden shadow-2xl">
+              <Image
+                  src={project.img}
+                  alt={`${project.title} screenshot`}
+                  fill
+                  className="object-cover"
+                  priority
+              />
             </div>
     
             <p className="text-lg text-gray-700 dark:text-gray-300 mb-12 leading-relaxed">
