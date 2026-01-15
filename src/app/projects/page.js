@@ -4,6 +4,15 @@ import Image from 'next/image';
 
 const projects = [
   {
+    slug: 'shoppie',
+    title: 'Shoppie',
+    img: '/images/shoppie.jpeg',
+    description: 'An E-Commerce app using fakesotreapi. Includes a complete list of products, description, cart and a simulated payment with a success message',
+    badges: ['Next.js', 'FakestoreAPI', 'Tailwind', 'API Routes', 'Context'],
+    github: 'https://github.com/martinramirez-dev/shoppie',
+    live: 'https://shoppie-gules.vercel.app/',
+  },
+  {
     slug: 'cinemine',
     title: 'Cinemine',
     img: '/images/cm.png',

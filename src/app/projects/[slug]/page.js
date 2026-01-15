@@ -4,11 +4,33 @@ import Link from "next/link";
 
 const projectData = [
     {
+      slug: 'shoppie',
+      title: 'Shoppie',
+      img: '/images/shoppie.jpeg',
+      description: 'An E-Commerce app using fakesotreapi. Includes a complete list of products, description, cart and a simulated payment with a success message',
+      tech: ['Next.js', 'FakestoreAPI', 'Tailwind', 'API Routes', 'Context'],
+      github: 'https://github.com/martinramirez-dev/shoppie',
+      live: 'https://shoppie-gules.vercel.app/',
+      challenges: [
+        "Migrating the entire styling system from traditional CSS to Tailwind CSS",
+        "Learning and adapting to the Next.js framework and its file-based routing",
+        "Implementing a full stack architecture, including backend logic",
+        "Building and connecting API routes to handle a simulated checkout transaction",
+        "Structuring a scalable and maintainable project for a real-world e-commerce application"
+      ],
+      learnings: [
+        "Learned how to build responsive and adaptive UIs using Tailwind CSS",
+        "Developed a complete full stack application using Next.js",
+        "Implemented API routes in Next.js to simulate backend transactions",
+        "Gained experience deploying a production-ready application to Vercel",
+        "Improved my understanding of how frontend and backend communicate in a real e-commerce flow"
+      ]
+    },
+    {
       slug: 'cinemine',
       title: 'Cinemine',
       img: '/images/cm.png',
       description: 'A movie discovery app using The Movie Database API. Includes search, featured section, movie detail modals, and a watchlist.',
-      longDescription: '',
       tech: ['HTML5', 'CSS3', 'JavaScript', 'API'],
       github: 'https://github.com/martinramirez-dev/cinemine',
       live: 'https://martinramirez-dev.github.io/cinemine/',
@@ -30,7 +52,6 @@ const projectData = [
       title: 'Pokemon Search',
       img: '/images/ps.png',
       description: 'A web app to search for Pokémon using the PokéAPI. Features a Game Boy–inspired design and localStorage-based favorites.',
-      longDescription: '',
       tech: ['HTML5', 'CSS3', 'JavaScript', 'API'],
       github: 'https://github.com/martinramirez-dev/pokemon-search',
       live: 'https://martinramirez-dev.github.io/pokemon-search/',
@@ -53,7 +74,6 @@ const projectData = [
       title: 'Botaniq',
       img: '/images/bt.png',
       description: 'A modern, responsive static page for a plant shop. Includes a menu, gallery, and contact section with a fresh green aesthetic.',
-      longDescription: '',
       tech: ['HTML5', 'CSS3', 'JavaScript'],
       github: 'https://github.com/martinramirez-dev/botaniq',
       live: 'https://martinramirez-dev.github.io/botaniq/',
@@ -76,7 +96,6 @@ const projectData = [
       title: 'Coffee Lovers',
       img: '/images/cl.png',
       description: 'A warm and elegant landing page for coffee lovers. Built with pure HTML and CSS, inspired by creamy coffee tones.',
-      longDescription: '',
       tech: ['HTML5', 'CSS3'],
       github: 'https://github.com/martinramirez-dev/coffee-lovers',
       live: 'https://martinramirez-dev.github.io/coffee-lovers/',
