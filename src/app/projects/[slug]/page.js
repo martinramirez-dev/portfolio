@@ -12,18 +12,32 @@ const projectData = [
       github: 'https://github.com/martinramirez-dev/shoppie',
       live: 'https://shoppie-gules.vercel.app/',
       challenges: [
-        "Migrating the entire styling system from traditional CSS to Tailwind CSS",
-        "Learning and adapting to the Next.js framework and its file-based routing",
-        "Implementing a full stack architecture, including backend logic",
-        "Building and connecting API routes to handle a simulated checkout transaction",
-        "Structuring a scalable and maintainable project for a real-world e-commerce application"
+        "Integrating an external API with state persistence, requiring proper serialization and deserialization of data",
+        "Relearning and correctly implementing serialization and deserialization after not using it for a long time",
+        "Building a fully responsive table layout that adapts well to different screen sizes",
+        "Ensuring consistent data flow between the API, global state, and persisted storage"
       ],
       learnings: [
-        "Learned how to build responsive and adaptive UIs using Tailwind CSS",
-        "Developed a complete full stack application using Next.js",
-        "Implemented API routes in Next.js to simulate backend transactions",
-        "Gained experience deploying a production-ready application to Vercel",
-        "Improved my understanding of how frontend and backend communicate in a real e-commerce flow"
+        "Improved my UI design skills by building an entire page using Tailwind CSS",
+        "Learned how to build a complete React application with routing, global state management, and persistence using Redux",
+        "Gained hands-on experience with performance optimizations such as lazy loading and React Suspense",
+        "Implemented robust error handling using Error Boundaries",
+        "Learned how to properly serialize and deserialize data to ensure reliable persistence and API integration"
+      ]
+    },
+    {
+      slug: 'task-manager',
+      title: 'Task Manager',
+      img: '/images/task-m.jpeg',
+      description: 'A Task Manager app using API and persistence, routing, optimization, lazy + suspense, error boundary and tailwind',
+      tech: ['React.js', 'React Routing', 'Redux.js', 'Optimization', 'Persistence', 'Tailwind', 'API'],
+      github: 'https://github.com/martinramirez-dev/task-manager',
+      live: 'https://task-manager-five-chi-90.vercel.app/',
+      challenges: [
+
+      ],
+      learnings: [
+
       ]
     },
     {

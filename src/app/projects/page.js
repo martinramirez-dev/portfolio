@@ -13,6 +13,15 @@ const projects = [
     live: 'https://shoppie-gules.vercel.app/',
   },
   {
+    slug: 'task-manager',
+    title: 'Task Manager',
+    img: '/images/task-m.jpeg',
+    description: 'A Task Manager app using API and persistence, routing, optimization, lazy + suspense, error boundary and tailwind',
+    badges: ['React.js', 'React Routing', 'Redux.js', 'Optimization', 'Persistence', 'Tailwind', 'API'],
+    github: 'https://github.com/martinramirez-dev/task-manager',
+    live: 'https://task-manager-five-chi-90.vercel.app/',
+  },
+  {
     slug: 'cinemine',
     title: 'Cinemine',
     img: '/images/cm.png',
