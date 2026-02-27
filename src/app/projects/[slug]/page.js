@@ -4,10 +4,36 @@ import Link from "next/link";
 
 const projectData = [
     {
+      slug: 'tech-in',
+      title: 'Tech In',
+      img: '/images/tech-in.jpeg',
+      description: 'Tech In is a full stack blog platform built with Next.js and Supabase. It features secure authentication, a real relational database, a personalized dashboard, post creation, comments, likes, and user settings. Users can create and manage their own posts, interact with other content, and experience a fully responsive and production-ready application.',
+      tech: ['Next.js', 'Tailwind', 'API Routes', 'Supabase', 'Supabase Auth'],
+      github: 'https://github.com/martinramirez-dev/tech-in',
+      live: 'https://tech-in-ten.vercel.app/',
+      challenges: [
+        "Implementing a complete authentication system after multiple failed attempts with Auth0 and Auth.js, eventually integrating Supabase Auth successfully",
+        "Overcoming configuration and integration issues between Next.js and Supabase during the authentication setup process",
+        "Designing and structuring my first real database using Supabase, including defining tables, relationships, and foreign keys",
+        "Handling image storage limitations and managing database structure efficiently within a limited budget",
+        "Building and structuring API routes in Next.js to handle backend logic, as this was my first full stack project with custom backend functionality",
+        "Architecting a scalable blog application with both frontend and backend working together in a real-world scenario"
+      ],
+      learnings: [
+        "Learned how to implement a full authentication system using Supabase Auth integrated with Next.js",
+        "Gained hands-on experience building my first complete full stack application (frontend + backend + database)",
+        "Developed practical knowledge of relational databases, including foreign keys and data modeling",
+        "Improved my understanding of API route handling and backend logic inside a Next.js application",
+        "Learned how frontend, backend, authentication, and database layers communicate in a real-world production flow",
+        "Strengthened my ability to debug complex integration issues across multiple technologies",
+        "Built a fully responsive and structured blog application with multiple sections and production-ready architecture"
+      ]
+    },
+    {
       slug: 'shoppie',
       title: 'Shoppie',
       img: '/images/shoppie.jpeg',
-      description: 'An E-Commerce app using fakesotreapi. Includes a complete list of products, description, cart and a simulated payment with a success message',
+      description: 'An E-Commerce app using fakesotreapi. Includes a complete list of products, description, cart and a simulated payment with a success message.',
       tech: ['Next.js', 'FakestoreAPI', 'Tailwind', 'API Routes', 'Context'],
       github: 'https://github.com/martinramirez-dev/shoppie',
       live: 'https://shoppie-gules.vercel.app/',
@@ -30,7 +56,7 @@ const projectData = [
       slug: 'task-manager',
       title: 'Task Manager',
       img: '/images/task-m.jpeg',
-      description: 'A Task Manager app using API and persistence, routing, optimization, lazy + suspense, error boundary and tailwind',
+      description: 'A Task Manager app using API and persistence, routing, optimization, lazy + suspense, error boundary and tailwind.',
       tech: ['React.js', 'React Routing', 'Redux.js', 'Optimization', 'Persistence', 'Tailwind', 'API'],
       github: 'https://github.com/martinramirez-dev/task-manager',
       live: 'https://task-manager-five-chi-90.vercel.app/',

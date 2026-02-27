@@ -4,6 +4,15 @@ import Image from 'next/image';
 
 const projects = [
   {
+    slug: 'tech-in',
+    title: 'Tech In',
+    img: '/images/tech-in.jpeg',
+    description: 'A complete blog app. Includes a complete login whit real auth, real database, dashboard, add, likes, my posts and settings section, you can add a post and put your comments and likes in',
+    badges: ['Next.js', 'Tailwind', 'API Routes', 'Supabase', 'Supabase Auth'],
+    github: 'https://github.com/martinramirez-dev/tech-in',
+    live: 'https://tech-in-ten.vercel.app/',
+  },
+  {
     slug: 'shoppie',
     title: 'Shoppie',
     img: '/images/shoppie.jpeg',
